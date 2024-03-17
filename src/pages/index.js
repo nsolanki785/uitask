@@ -1,118 +1,193 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import Layout from "@/components/layout";
+// import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const testMonialdetails = [
+    { imgurl: "/download.jpg", title: "Ease of doing business.", details: "it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", name: "John doe" },
+    { imgurl: "/download.jpg", title: "Profitability from day one.", details: "it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", name: "John doe" },
+    { imgurl: "/download.jpg", title: "Lubigen support is un-matched", details: "it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", name: "John doe" },
+  ]
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Layout>
+        <div className="my-20 mx-auto container">
+          <div className="bg-black min-h-[100vh]">
+            <div className="md:container md:mx-auto relative">
+              <div className=" absolute right-32 top-[-100px] " >
+                <img width="900px" height="100%" src="/engine.png" />
+              </div>
+              <div className="">
+                <div className="mx-16  w-1/2 h-[400px] bg-gray-50 flex flex-col justify-center items-center">
+                  <div className="">
+                    <div className="mb-3">3p</div>
+                    <div className="font-bold text-[20px]">Your engine is in safe hands</div>
+                    <h1 className="font-bold text-[30px]">With Lubigen</h1>
+
+                    <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                      brings world class technological insights to its products, offering you the best formulations for your vehicle.
+                    </p>
+
+                  </div>
+                </div>
+                <div className="py-10 mx-16 items-center w-1/2 h-[150vh] items-center   bg-yellow-400  ">
+                <div className="py-10 flex justify-center divide-y divide-black  	">
+                    <div className="font-bold text-[30px] me-10">01</div>
+                    <div>              
+                     <h1 className="font-bold text-[30px]">With Lubigen</h1>
+                      <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                        brings world class technological insights to its products, offering you the best formulations for your vehicle.
+                      </p>
+
+                    </div>        
+                    </div>
+                  <div className="py-10 flex justify-center 	">
+                  
+                    <div className="font-bold text-[30px] me-10">02</div>
+                    <div>
+                      <h1 className="font-bold text-[30px]">With Lubigen</h1>
+                      <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                        brings world class technological insights to its products, offering you the best formulations for your vehicle.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="py-10 flex justify-center 	">
+                  
+                    <div className="font-bold text-[30px] me-10">03</div>
+                    <div>
+                      <h1 className="font-bold text-[30px]">With Lubigen</h1>
+                      <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                        brings world class technological insights to its products, offering you the best formulations for your vehicle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          {/* Third Section */}
+          <div>
+            <div> <img src="/2001.i123.005..engine oil advertising realistic.jpg" /> </div>
+            <div className="py-10 flex justify-center   items-center bg-blue-900 text-white text-center px-10">
+              <div className="w-[70%]">
+                <h1 className="mt-7 mb-7 text-6xl">Explore  Our Product Range</h1>
+                <p className="mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                  brings world class technological insights to its products, offering you the best formulations for your vehicle.
+                </p>
+                <button className="mt-7 mb-7 text-black bg-white ps-10 pe-10 cursor-pointer pt-2 pb-2 font-bold   ">Explore More</button>
+              </div>
+            </div>
+          </div>
+
+          {/* {Forth Section} */}
+          <div className="relative w-[100%] h-[100%]">
+            <div className="px-10 py-5">
+              <div className="font-bold text-[20px]">Your engine is in safe hands</div>
+              <h1 className="font-bold text-[30px]">With Lubigen</h1>
+
+              <p className="w-[60%] text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                brings world class technological insights to its products, offering you the best formulations for your vehicle.
+              </p>
+
+            </div>
+
+            <div className="px-10 py-5">
+              <div className="font-bold text-[20px]">Your engine is in safe hands</div>
+              <h1 className="font-bold text-[30px]">With Lubigen</h1>
+
+              <p className="w-[30%] text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                brings world class technological insights to its products, offering you the best formulations for your vehicle.
+              </p>
+
+            </div>
+            <div className="px-10 py-5">
+              <div className="font-bold text-[20px]">Your engine is in safe hands</div>
+              <h1 className="font-bold text-[30px]">With Lubigen</h1>
+
+              <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">Get the PDF copy of our product brochure with the available products at lubigen for free here.Lubigen Lubricants
+                brings world class technological insights to its products, offering you the best formulations for your vehicle.
+              </p>
+
+            </div>
+
+            <div className="w-[70%] h-[70%]   absolute  right-0 bottom-0">
+              <img
+
+                className="rounded-image	 w-[100%] h-[100%] " src="/2001.i123.005..engine oil advertising realistic.jpg" alt="img not found" />
+            </div>
+          </div>
+
+          {/* {Fiveth section} */}
+          <div className="bg-slate-100 py-10">
+            <div className="items-center  text-center">
+              <div className="font-bold text-[30px] font-bold">Testimonial</div>
+              <h1 className="font-bold text-5xl">People believe in us</h1>
+            </div>
+            <div className="px-10 mt-16 mb-16">
+              <div className="grid grid-cols-1 gap-3  md:grid-cols-3">
+
+                {testMonialdetails && testMonialdetails.map((item) => {
+                  return (
+                    <>
+                      <div class="py-5 px-3 mx-auto max-w-sm bg-white ">
+                        <div class="p-5">
+                          <div className="mt-3 mb-3">
+                            <img class="w-20 rounded-full" src={item.imgurl} alt="" />
+                          </div>
+                          <div className="w-48 mt-3 mb-3">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.title}</h5>
+                          </div>
+                          <p class="mb-3 font-normal ">{item.details}</p>
+                          <div class=" font-bold">
+                            {item.name}
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )
+                })
+                }
+              </div>
+
+            </div>
+
+            <div className="px-20 mt-5 mb-5 grid grid-cols-1 gap-2  md:grid-cols-2">
+              <div>
+                <h1 className="font-bold text-5xl">We Work with the Best partners </h1>
+                <p className="w-80 text-[16px] mt-7 mb-7 text-[15px]">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                </p>
+                <button className="w-40 p-2 bg-yellow-300	 text-center text-black">Read More</button>
+              </div>
+
+              <div className="mt-3 grid grid-cols-1 gap-2  md:grid-cols-2 px-3 ">
+                <div>Classic icon</div>
+                <div>Sunshine icon</div>
+                <div>Your Couch icon</div>
+                <div>Outdoors icon</div>
+                <div>Design Studio icon</div>
+                <div>Vintage icon</div>
+              </div>
+            </div>
+          </div>
+
+          <div className=" mb-5 grid grid-cols-1 gap-0  md:grid-cols-3">
+            <div className="col-span-2 px-16 py-20 flex flex-col justify-center bg-yellow-400">
+              <h1 className="font-bold text-3xl">Become a dealer </h1>
+              <p className=" text-[16px] w-[500px] mt-7 mb-7 text-[15px]">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+              </p>
+              <button className="w-40 p-2 bg-gray-900	 text-center text-white">Become a dealer</button>
+            </div>
+            <div className="col-span-1 w-full h-full">
+              <img width="100%" height="100%" src="/download.jpg" alt="not found" />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </Layout>
+    </>
   );
 }
