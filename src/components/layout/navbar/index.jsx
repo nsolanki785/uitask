@@ -11,7 +11,7 @@ const Navbar = () => {
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> */}
-            <span class="text-sky-600 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span class="text-sky-600 self-center text-2xl font-bold whitespace-nowrap dark:text-white">
               LUBIGEN
             </span>
           </a>
